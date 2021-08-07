@@ -15,8 +15,6 @@ declare module 'node-ical' {
      * Methods (Async)
      */
   export interface NodeICalAsync {
-    fromURL: ((url: string, callback: NodeIcalCallback) => void) & ((url: string, options: RequestInit | NodeIcalCallback, callback?: NodeIcalCallback) => void) & ((url: string) => Promise<CalendarResponse>);
-
     parseICS: ((body: string, callback: NodeIcalCallback) => void) & ((body: string) => Promise<CalendarResponse>);
   }
 
